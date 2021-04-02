@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scan View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ScanViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ScanViewController" customModule="_DScannerAppDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nja-oZ-8SC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </arView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eui-sS-gGe">
+                                <rect key="frame" x="42.333333333333336" y="644.33333333333337" width="122.66666666666666" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back to home"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhF-lT-qX3">
+                                <rect key="frame" x="324.66666666666669" y="644.33333333333337" width="34" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="End"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eui-sS-gGe" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.8" id="5dL-Hm-UsW"/>
+                            <constraint firstItem="nja-oZ-8SC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="8Hd-me-TnS"/>
+                            <constraint firstItem="nja-oZ-8SC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="DIm-Of-Nxz"/>
+                            <constraint firstItem="eui-sS-gGe" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.048913" id="Gum-aJ-tGH"/>
+                            <constraint firstItem="nja-oZ-8SC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LXq-vz-eQl"/>
+                            <constraint firstItem="eui-sS-gGe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.296296" id="M5w-Fd-eeK"/>
+                            <constraint firstItem="eui-sS-gGe" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.048913" id="OUk-or-OET"/>
+                            <constraint firstItem="nja-oZ-8SC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="PPF-ou-Zzg"/>
+                            <constraint firstItem="ZhF-lT-qX3" firstAttribute="width" secondItem="eui-sS-gGe" secondAttribute="width" multiplier="0.277666" id="Vap-yQ-IYw"/>
+                            <constraint firstItem="ZhF-lT-qX3" firstAttribute="centerY" secondItem="eui-sS-gGe" secondAttribute="centerY" id="oiH-nD-Zm4"/>
+                            <constraint firstItem="eui-sS-gGe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.5" id="tr9-tQ-R86"/>
+                            <constraint firstItem="ZhF-lT-qX3" firstAttribute="centerX" secondItem="eui-sS-gGe" secondAttribute="centerX" multiplier="3.3" id="x5e-Pa-Z0z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BTVBtn" destination="eui-sS-gGe" id="Ps1-hk-EQ9"/>
+                        <outlet property="EndBtn" destination="ZhF-lT-qX3" id="aeg-EI-QUV"/>
+                        <outlet property="arView" destination="nja-oZ-8SC" id="n0v-Ny-fYQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
